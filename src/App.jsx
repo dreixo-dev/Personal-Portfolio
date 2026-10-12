@@ -68,7 +68,7 @@ const projects = [
   },
 ]
 
-// Languages, frameworks and tools (shown as icons)
+// Languages, frameworks and tools
 const techGroups = {
   Languages: ['HTML', 'CSS', 'JavaScript'],
   Frontend: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS'],
@@ -78,7 +78,6 @@ const techGroups = {
 }
 const allTechs = [...new Set(Object.values(techGroups).flat())]
 
-// Real brand logos, embedded as SVG paths (no internet needed). c: null = follows light / dark theme
 const LOGOS = {
   "HTML": { vb: "0 0 24 24", c: "#E34F26", d: "M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438zm7.031 9.75-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157z" },
   "CSS": { vb: "0 0 384 512", c: "#1572B8", d: "m0 32 34.9 395.8L192 480l157.1-52.2L384 32zm313.1 80-4.8 47.3L193 208.6l-.3.1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2.1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112z" },
@@ -384,7 +383,7 @@ function Home({ go, downloadCV }) {
               </div>
             </div>
             <span className="pcard absolute -bottom-4 right-2 flex items-center gap-2 px-3 py-2 text-xs font-semibold shadow-lg sm:-right-4">
-              <span className="t-acc"><Icon name="pin" size={14} /></span> Tanza, Cavite, PH
+              <span className="t-acc"><Icon name="pin" size={14} /></span> General Trias City, Cavite
             </span>
           </div>
         </div>
@@ -395,9 +394,9 @@ function Home({ go, downloadCV }) {
 
 function About() {
   const rows = [
-    ['pin', 'Location', 'Tanza, Cavite, Philippines'],
+    ['pin', 'Location', 'General Trias, Cavite, Philippines'],
     ['cap', 'School', 'Cavite State University – Tanza'],
-    ['bolt', 'Focus', 'ReactJS & Tailwind CSS'],
+    ['bolt', 'Focus', 'Web Development, Software Development'],
     ['user', 'Status', STATUS],
   ]
   return (
@@ -663,7 +662,7 @@ function Contact() {
               </a>
             ))}
           </div>
-          <p className="mt-8 flex items-center gap-2 text-xs text-white/80"><Icon name="pin" size={14} /> Tanza, Cavite, Philippines</p>
+          <p className="mt-8 flex items-center gap-2 text-xs text-white/80"><Icon name="pin" size={14} /> General Trias, Cavite, Philippines</p>
         </div>
 
         <div className="p-6 sm:p-10">
