@@ -208,22 +208,16 @@ function Icon({ name, size = 18 }) {
 
 function Avatar() {
   return (
-    <svg viewBox="0 0 120 120" width="100%" height="100%" preserveAspectRatio="xMidYMax slice" role="img" aria-label="Ryan avatar" style={{ display: 'block' }}>
-      <rect width="120" height="120" fill="#7c9cff" />
-      <circle cx="96" cy="26" r="26" fill="#9db4ff" />
-      <path d="M12 126c2-28 22-40 48-40s46 12 48 40z" fill="#1e293b" />
-      <rect x="51" y="68" width="18" height="18" rx="8" fill="#e8b48f" />
-      <circle cx="60" cy="52" r="23" fill="#f3cca8" />
-      <path d="M37 52C33 30 47 23 60 23c14 0 27 8 23 29-3-8-8-12-14-14-9 4-21 5-32 14Z" fill="#2a211c" />
-      <circle cx="51" cy="55" r="2.2" fill="#2a211c" />
-      <circle cx="69" cy="55" r="2.2" fill="#2a211c" />
-      <path d="M52 63c4 4.5 12 4.5 16 0" stroke="#2a211c" strokeWidth="2.2" strokeLinecap="round" fill="none" />
-      <circle cx="46" cy="61" r="3.2" fill="#ff8a7a" opacity=".35" />
-      <circle cx="74" cy="61" r="3.2" fill="#ff8a7a" opacity=".35" />
-      <path d="M33 58C30 18 90 18 87 58" stroke="#0f172a" strokeWidth="4" fill="none" strokeLinecap="round" />
-      <rect x="27" y="50" width="10" height="19" rx="5" fill="#3b82f6" />
-      <rect x="83" y="50" width="10" height="19" rx="5" fill="#3b82f6" />
-    </svg>
+    <img
+      src="/profile.jpeg"
+      alt="Ryan Andrei Obedientes"
+      style={{
+        width: '100%',
+        height: '100%',
+        objectFit: 'cover',
+        display: 'block',
+      }}
+    />
   )
 }
 
